@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="dist\**" />
+    <Content Remove="dist\**" />
+    <EmbeddedResource Remove="dist\**" />
+    <None Remove="dist\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="bundleconfig.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src\app\common\auth\auth.service.ts" />
+    <None Remove="src\app\common\guards\auth.guard.ts" />
+    <None Remove="src\app\common\models\current-user.model.ts" />
+    <None Remove="src\app\common\models\login.model.ts" />
+    <None Remove="src\app\common\models\user.model.ts" />
+    <None Remove="src\app\services\user.service.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="src\app\common\auth\auth.service.ts" />
+    <TypeScriptCompile Include="src\app\common\guards\auth.guard.ts" />
+    <TypeScriptCompile Include="src\app\common\models\current-user.model.ts" />
+    <TypeScriptCompile Include="src\app\common\models\login.model.ts" />
+    <TypeScriptCompile Include="src\app\common\models\user.model.ts" />
+    <TypeScriptCompile Include="src\app\services\user.service.ts" />
+  </ItemGroup>
+</Project>

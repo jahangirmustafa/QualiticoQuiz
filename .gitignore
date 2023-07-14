@@ -1,0 +1,16 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Qualitico.WebApi/obj
+/Qualitico.UI/bin/Debug/netcoreapp2.0
+/Qualitico.UI/node_modules
+/Qualitico.UI/obj
+/Qualitico.WebApi/bin/Debug/netcoreapp2.0
+/Qualitico.Business/bin/Debug/netcoreapp2.0
+/Qualitico.Business/obj
+/Qualitico.Business/AutoMapper/AutoMapperProfile.cs
+/Qualitico.Data/obj
+/Qualitico.Data/bin/Debug/netcoreapp2.0
+/Qualitico.UI/dist/out-tsc
